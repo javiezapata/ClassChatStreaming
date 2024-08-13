@@ -1,0 +1,64 @@
+/* Contenedor de los mensajes */
+.chat-window {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  height: 400px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+/* Estilo para cada mensaje */
+.message-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Estilo para el nombre de usuario y rol */
+strong.moderator {
+  color: red; /* Color para moderador */
+  font-weight: bold;
+}
+
+strong {
+  color: #333; /* Color para nombres de usuario */
+  margin-right: 5px;
+}
+
+/* Estilo para el texto del mensaje */
+.message-content {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+/* Estilo para el input del mensaje */
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,14 @@
+<div class="chat-window">
+  <div *ngFor="let message of messages" class="message-container">
+    <strong [ngClass]="{'moderator': message.role === 'moderador'}">
+      {{message.userId === user ? 'Tú' : message.usernamechat}}
+      <span *ngIf="message.role === 'moderador'">(Moderador)</span>:
+    </strong>
+    <span class="message-content">{{message.content}}</span>
+  </div>
+</div>
+
+<div class="chat-input">
+  <input [(ngModel)]="messageText" (keyup.enter)="sendMessage()" placeholder="Escribe un mensaje..." />
+  <button (click)="sendMessage()">Enviar</button>
+</div>

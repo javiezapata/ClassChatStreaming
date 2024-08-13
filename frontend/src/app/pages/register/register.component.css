@@ -1,0 +1,65 @@
+.register {
+    display: flex;
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background-color: chocolate;
+    align-items: flex-end;
+
+    #title {
+        color: #7b1313;
+    }
+
+    .register-container {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        border: 4px solid #330918ad;
+        border-radius: 20px;
+        background-color: #f5f5dc96;
+        margin-top: 80px;
+    }
+      
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+      
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .text {
+        color: #460d28;
+    }
+
+    .boton {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    
+    #button_login {
+        width: 200px;
+
+        button {
+            margin-top: 9px;
+            background: none;
+            border: none;
+            color: blue;
+            width: 250px;
+            cursor: pointer;
+        }
+    }
+}
